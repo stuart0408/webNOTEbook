@@ -122,15 +122,6 @@ const RegisterScreen=()=>{
 
                     {picMessage && <ErrorMessage variant="danger">{picMessage}</ErrorMessage>}
 
-                    <Form.Group controlId="pic">
-                        <Form.Label>Pofile Picture</Form.Label>
-                        <Form.Control 
-                          type="file" 
-                          onChange={(e)=>postDetails(e.target.files[0])}
-                          />
-
-                    </Form.Group>
-
                     <Button variant="primary" type="submit">
                       Register
                     </Button>
